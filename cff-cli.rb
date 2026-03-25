@@ -10,7 +10,7 @@ class CffCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/aurel-bul/cff-cli/releases/download/v2.3.0/cff-cli_Darwin_x86_64.tar.gz"
-      sha256 "3dcc3138cb902a41b4d73b0fc8b69a65dbade9fb7d9b18c377b36ee5f93eec19"
+      sha256 "30baf15cf03d0367812607de248d603c87ad65261e22d0561cac0b2e138c75b5"
 
       def install
         bin.install "cff"
@@ -18,7 +18,7 @@ class CffCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/aurel-bul/cff-cli/releases/download/v2.3.0/cff-cli_Darwin_arm64.tar.gz"
-      sha256 "109d9c1050f85ef37f1062fc5cfd0df344cc12f2ee015d0385c544496dbe2418"
+      sha256 "e6824ff03ae6ad5532fb8974a53ad57d114f281c71ccd65f0990f2581ff2c934"
 
       def install
         bin.install "cff"
@@ -29,14 +29,14 @@ class CffCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/aurel-bul/cff-cli/releases/download/v2.3.0/cff-cli_Linux_x86_64.tar.gz"
-      sha256 "06dee414b5f33cabbb37b2d02773e3310376639224f0d172e0f51813bdecdf32"
+      sha256 "dc3ebd9b08e9795d7b9afe371aa2468ba433baa8e00e4ee5eaf1d16438365709"
       def install
         bin.install "cff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/aurel-bul/cff-cli/releases/download/v2.3.0/cff-cli_Linux_arm64.tar.gz"
-      sha256 "9a21c5650f2139ad8090815c436f10e77d744cf6ef8e7940f533464f87e54e00"
+      sha256 "ac0ad14122b5d9f7ba8c96dfdea9cc2eeefd4b2a03854a62475dd0bda25a7c4e"
       def install
         bin.install "cff"
       end
