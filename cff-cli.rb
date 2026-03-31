@@ -5,20 +5,20 @@
 class CffCli < Formula
   desc "CLI tool to view the timetables of the Swiss federal railways (SBB CFF FFS)."
   homepage "https://github.com/aurel-bul/cff-cli"
-  version "2.3.0"
+  version "3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aurel-bul/cff-cli/releases/download/v2.3.0/cff-cli_Darwin_x86_64.tar.gz"
-      sha256 "30baf15cf03d0367812607de248d603c87ad65261e22d0561cac0b2e138c75b5"
+      url "https://github.com/aurel-bul/cff-cli/releases/download/v3/cff-cli_Darwin_x86_64.tar.gz"
+      sha256 "1b752abcd6fdd821ad9982a042a24d535673edeada282f4d6ed120ef1eb67e95"
 
       def install
         bin.install "cff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aurel-bul/cff-cli/releases/download/v2.3.0/cff-cli_Darwin_arm64.tar.gz"
-      sha256 "e6824ff03ae6ad5532fb8974a53ad57d114f281c71ccd65f0990f2581ff2c934"
+      url "https://github.com/aurel-bul/cff-cli/releases/download/v3/cff-cli_Darwin_arm64.tar.gz"
+      sha256 "8354a87e3c3cacbddd7062c83900650f4f249072236e4dfc86342fa541eeb2a3"
 
       def install
         bin.install "cff"
@@ -28,15 +28,15 @@ class CffCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aurel-bul/cff-cli/releases/download/v2.3.0/cff-cli_Linux_x86_64.tar.gz"
-      sha256 "dc3ebd9b08e9795d7b9afe371aa2468ba433baa8e00e4ee5eaf1d16438365709"
+      url "https://github.com/aurel-bul/cff-cli/releases/download/v3/cff-cli_Linux_x86_64.tar.gz"
+      sha256 "a874ef06fc6e00a035fda4da01f4753813738db85498b508510483df2270368b"
       def install
         bin.install "cff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aurel-bul/cff-cli/releases/download/v2.3.0/cff-cli_Linux_arm64.tar.gz"
-      sha256 "ac0ad14122b5d9f7ba8c96dfdea9cc2eeefd4b2a03854a62475dd0bda25a7c4e"
+      url "https://github.com/aurel-bul/cff-cli/releases/download/v3/cff-cli_Linux_arm64.tar.gz"
+      sha256 "28071b2ad039a6a60ca8ee77232b7ce44f029a61bc5dbf964db9a1e8b37d7f01"
       def install
         bin.install "cff"
       end
